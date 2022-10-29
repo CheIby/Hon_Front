@@ -7,7 +7,7 @@ function App() {
   const [text,setText] = useState([])
 
   const fetchData=async()=>{
-    await axios.get('http://localhost:7000/getall')
+    await axios.get('http://localhost/api/getall')
     .then(res=>{
         setText(res.data)
     }).catch(err=>{
